@@ -1,0 +1,31 @@
+[game]
+name = "PanzerBandit"
+id = "SLPS-00899"
+exe = "input/SLPS_008.99"
+disc = "disc/Panzer Bandit (Japan).cue"
+load_address = "0x80010000"
+entry_pc = "0x8005F3AC"
+text_size = "0x00090800"
+stack_base = "0x801FFFF0"
+
+[recompiler]
+seeds = "seeds/functions.txt"
+strict = true
+out_dir = "generated"
+
+[runtime]
+window_title = "Panzer Bandit Recompiled"
+bios_hle = false
+openbios = true
+overlay_cache = true
+
+[video]
+renderer = "software"
+
+[prepare_disc]
+track_01_sha1 = "2f7e3b76394c40f8adf943eebb698baa6558cef0"
+track_01_md5 = "1bb5fdd226c72137087e10500bff761f"
+track_01_size = 251504064
+
+[netplay]
+require_cue = true
